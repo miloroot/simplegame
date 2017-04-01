@@ -11,11 +11,10 @@ $(function() {
         strokeStyle: 'darkblue',
         strokeWidth: 3,
         x: 200, y: 200,
-        radius: 50
-    });
-
-    circle.on('click', function() {
-        console.log('Has been clicked: circle.');
+        radius: 50,
+        click: function(layer) {
+            console.log('circle has been clicked.');
+        }
     });
 
 });
