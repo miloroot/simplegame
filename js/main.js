@@ -14,6 +14,11 @@ $(function() {
         radius: 50,
         click: function(layer) {
             console.log('circle has been clicked.');
+            $(this).animateLayer(layer, {
+                radius: '+=10',
+                fillStyle: 'darkred',
+                strokeStyle: 'red'
+            });
         }
     });
 
