@@ -10,8 +10,9 @@ $(function() {
         fillStyle: 'lightblue',
         strokeStyle: 'darkblue',
         strokeWidth: 3,
-        x: 200, y: 200,
+        x: 450, y: 250,
         radius: 50,
+        draggable: true,
         click: function(layer) {
             console.log('circle has been clicked.');
             $(this).animateLayer(layer, {
